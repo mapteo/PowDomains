@@ -1,3 +1,5 @@
+var newurl;
+
 var QueryString = function () {
   // This function is anonymous, is executed immediately and 
   // the return value is assigned to QueryString!
@@ -21,38 +23,17 @@ var QueryString = function () {
     return query_string;
 } ();
 
-
-var trailing = function (question_mark_pos, url) {
-  if ((question_mark_pos == -1) && (url.substring(url.length-1) != "/") ) {
-    return 1;
-  } else if ((question_mark_pos != -1) && (url.charAt(question_mark_pos-1) != "/")) {
-    return 2;
+function GetGoogleQuerySearchParam () {
+  if (QueryString.q == undefined) {
+    return "null"
   } else {
-    return 0;
+    return QueryString.q;
   }
-}
-var newurl;
+} ();
 
-var domain = document.domain.split('.');
-var url = document.URL;
+var google_search = GetGoogleQuerySearchParam();
 
-if (QueryString.q == undefined) {
-  var google = "null"
-} else {
-  var google = QueryString.q;
-}
-
-var question_mark_pos = url.indexOf("?");
-var trail = trailing (question_mark_pos, url);
-
-if (( domain[domain.length-1] == 'dev')  && ( trail == 1 ))// if it matches pow url without slash char
-{
-  newurl = url + "/";
-  chrome.extension.sendRequest({redirect: newurl});
-}  else if (( domain[domain.length-1] == 'dev')  && ( trail == 2 )) {
-  newurl = url.replace("?", "/?")
-  chrome.extension.sendRequest({redirect: newurl});  
-}  else if  (google.indexOf('.dev') > -1)  {
-  newurl = "http://" + unescape(google);
+if (google_search.indexOf('.dev') > -1)  {
+  newurl = "http://" + unescape(google_search);
   chrome.extension.sendRequest({redirect: newurl});
 }
