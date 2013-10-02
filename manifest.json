@@ -9,7 +9,6 @@
       "16": "icon16.png",
       "48": "icon48.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDzwU/7hhew2Fl5BDfnheYKgZEB6ywNNj5e7c/YR6e6hXl35GisbxY/+KbtQHkhJKF/hUGp2J4rRmBYMZn8Umb4UBJqG0w0ZLwsHVWE8NGYV5x2Kv9fKBZnxfhrR9440KcQO/z+oPQR7FINC0ffoe27Yhno2L2BZlfwYEWw5luvzwIDAQAB",
    "manifest_version": 2,
    "name": "Pow domains",
    "update_url": "https://clients2.google.com/service/update2/crx",
