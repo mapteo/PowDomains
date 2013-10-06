@@ -1,6 +1,6 @@
 # PowDomains
 
-Chrome & Safari Extension: Configure Chrome or Safari to treat .dev URLs (Pow top-level domains) as valid domains.
+Chrome & Safari Extensions - Configure Chrome or Safari to treat .dev URLs (Pow top-level domains) as valid domains.
 
 With Pow I often forget to add the slash ('/') at the end of the URL and browser like Chrome or Safari tries to search on Google (or other search engines) for the text of the URL instead of going to the URL.  
 
