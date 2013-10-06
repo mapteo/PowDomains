@@ -1,6 +1,15 @@
-# PowDomainsSafari
+# PowDomains
 
-Safari Extension: Configure Safari to treat .dev URLs (Pow top-level domains) as valid domains.
+Chrome & Safari Extension: Configure Chrome or Safari to treat .dev URLs (Pow top-level domains) as valid domains.
 
-With Safari and Pow I often forget to add the slash ('/') at the end of the URL and Safari tries to search on Google for the text of the URL instead of going to the URL.  
-This extension forces Safari to treat .dev domains as valid domains.
+With Pow I often forget to add the slash ('/') at the end of the URL and browser like Chrome or Safari tries to search on Google (or other search engines) for the text of the URL instead of going to the URL.  
+
+The Extension intercepts searches and force Safari or Chrome to treat Pow .dev URLs as valid domains.
+
+###Safari - Download & Install
+Extension installation - simply download and open the extension file:
+http://pow-domains.s3.amazonaws.com/pow-domains-safari/PowDomains.safariextz
+
+###Chrome Web Store
+Extension installation - Visit the Chrome Web Store page and click the "Add to Chrome" button (it's free):
+https://chrome.google.com/webstore/detail/pow-domains/iigmgfbfgogbfnkgemfbpbncldjlfeoa
