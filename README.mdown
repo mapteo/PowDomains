@@ -1,0 +1,6 @@
+# PowDomainsSafari
+
+Safari Extension: Configure Safari to treat .dev URLs (Pow top-level domains) as valid domains.
+
+With Safari and Pow I often forget to add the slash ('/') at the end of the URL and Safari tries to search on Google for the text of the URL instead of going to the URL.  
+This extension forces Safari to treat .dev domains as valid domains.
